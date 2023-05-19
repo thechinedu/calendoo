@@ -1,0 +1,21 @@
+{
+  "name": "calendoo",
+  "packageManager": "yarn@3.5.1",
+  "workspaces": [
+    "apps/*"
+  ],
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "dev": "turbo run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^7.2.1",
+    "turbo": "^1.9.3",
+    "typescript": "^5.0.4"
+  }
+}
