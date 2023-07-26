@@ -963,7 +963,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.2.4":
+"@types/react@npm:*":
   version: 18.2.4
   resolution: "@types/react@npm:18.2.4"
   dependencies:
@@ -971,6 +971,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: d920fc93832fe50d5e8175a0ba233086c97a9e238ff7327c8319b8dec57409618f491d6f71be2374c3132f40a8fc428b3e406c1e2a5f1dc32ccd6d47051786d2
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:18.2.16":
+  version: 18.2.16
+  resolution: "@types/react@npm:18.2.16"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 3d4fdc12509e0098e0dbb4bacdea53e8ccc6632e9df63d9f2711c77aa81ce3b2bb9c76d087f284034b25fd7245680167f4832bf6e4df960c5af2634b52adfd0c
   languageName: node
   linkType: hard
 
@@ -4037,7 +4048,7 @@ __metadata:
   resolution: "web@workspace:apps/web"
   dependencies:
     "@types/node": 18.16.3
-    "@types/react": 18.2.4
+    "@types/react": 18.2.16
     "@types/react-dom": 18.2.3
     eslint: 8.39.0
     eslint-config-next: 13.3.4
