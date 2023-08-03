@@ -1,0 +1,23 @@
+.header {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: var(--spacer-2);
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a:not(:first-of-type) {
+  font-size: var(--small);
+  margin-inline-start: var(--spacer-2);
+}
+
+.logoContainer {
+  align-items: center;
+  display: flex;
+  margin-inline-end: auto;
+}
+
+.logoContainer img {
+  margin-inline-end: var(--spacer-1);
+}
