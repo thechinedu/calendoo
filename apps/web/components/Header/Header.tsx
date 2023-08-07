@@ -13,7 +13,9 @@ export const Header = () => {
         </Link>
 
         <Link href="#">Sign in</Link>
-        <Link href="#">Get started</Link>
+        <Link href="#" className={styles.cta}>
+          Get started
+        </Link>
       </nav>
     </header>
   );
