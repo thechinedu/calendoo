@@ -1,0 +1,17 @@
+.footer {
+  border-top: 1px solid var(--gray);
+  display: flex;
+  margin-top: auto;
+  padding-block-start: var(--spacer-2);
+}
+
+.logoContainer {
+  align-items: center;
+  color: inherit;
+  display: flex;
+  margin-inline-end: auto;
+}
+
+.logoContainer img {
+  margin-inline-end: var(--spacer-1);
+}

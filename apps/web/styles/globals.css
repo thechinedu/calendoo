@@ -18,14 +18,8 @@
 
   --black: #262626;
   --white: #ffffff;
-  --powder: #f9f8f4;
-  --yale-blue: #094d92;
-  --atomic-tangerine: #ff934f;
-  --vivid-burgundy: #a61c3c;
-  --dartmouth-green: #306b34;
-  --gray: #464f51;
-  --subtle-gray: #e9e7e7;
-  --beige: #f5f5dc;
+  --gray: #f5f5f5;
+  --primary: #1b73e8;
 
   /* Spacing */
 
@@ -71,7 +65,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--primary);
   text-decoration: none;
 }
 

@@ -1,9 +1,11 @@
 .header {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   padding: var(--spacer-2);
+  margin-inline: calc(-1 * var(--spacer-2));
 }
 
 .navbar {
+  align-items: center;
   display: flex;
 }
 
@@ -14,10 +16,19 @@
 
 .logoContainer {
   align-items: center;
+  color: inherit;
   display: flex;
   margin-inline-end: auto;
 }
 
 .logoContainer img {
   margin-inline-end: var(--spacer-1);
+}
+
+.cta {
+  background-color: var(--primary);
+  border-radius: 4px;
+  color: var(--white);
+  font-weight: 700;
+  padding: var(--spacer-1) var(--spacer-3);
 }
