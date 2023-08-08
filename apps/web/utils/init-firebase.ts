@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getAuth, connectAuthEmulator } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -16,4 +17,9 @@ export const initFirebase = () => {
 
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+  const auth = getAuth();
+  connectAuthEmulator(
+    auth,
+    process.env.NEXT_PUBLIC_AUTH_EMULATOR_HOST as string
+  );
 };
