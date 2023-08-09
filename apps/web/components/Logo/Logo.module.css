@@ -1,0 +1,10 @@
+.logoContainer {
+  align-items: center;
+  color: inherit;
+  display: flex;
+  margin-inline-end: auto;
+}
+
+.logoContainer img {
+  margin-inline-end: var(--spacer-1);
+}
