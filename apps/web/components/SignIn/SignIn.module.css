@@ -1,29 +1,33 @@
 .main {
-  border: 1px solid var(--gray);
-  border-radius: 8px;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
-  padding: var(--spacer-12) var(--spacer-2);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
   margin: 0 auto;
   max-width: 500px;
-}
-
-.logoContainer {
-  font-weight: 700;
-  justify-content: center;
+  padding-inline: var(--spacer-2);
 }
 
 .heading {
   font-size: var(--medium);
   font-weight: 400;
-  margin-block-start: var(--spacer-1);
 }
 
 .form {
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: var(--spacer-2);
-  margin-block-start: var(--spacer-2);
+  padding: var(--spacer-12) var(--spacer-2);
+  text-align: center;
+}
+
+.logoContainer {
+  align-self: center;
+  font-weight: 700;
+  margin-inline-end: unset;
 }
 
 .form label {
@@ -31,18 +35,33 @@
   position: relative;
 }
 
-.form span {
-  /* font-size: var(--small); */
-  left: 10px;
+.labelText {
+  cursor: text;
+  left: 34px;
+  opacity: 0.85;
   position: absolute;
-  top: 10px;
+  top: 19px;
+  transition-duration: 0.2s;
 }
 
-.form input {
+.input {
   border: 2px solid var(--gray);
   border-radius: 4px;
   padding: var(--spacer-2) var(--spacer-4);
   width: 100%;
+}
+
+.labelText:has(~ .input:focus),
+.labelText.inputDirty {
+  background-color: var(--white);
+  left: calc(34px - var(--spacer-1));
+  opacity: 1;
+  padding-inline: var(--spacer-1);
+  top: -10px;
+}
+
+.labelText:has(~ .input:focus) {
+  color: var(--primary);
 }
 
 .form button[type="submit"] {
@@ -51,6 +70,7 @@
   border: 0;
   border-radius: 4px;
   color: var(--white);
+  cursor: pointer;
   font-size: var(--small);
-  padding: var(--spacer-1) var(--spacer-3);
+  padding: var(--spacer-2) var(--spacer-4);
 }
