@@ -16,6 +16,11 @@
   margin-inline-start: var(--spacer-2);
 }
 
+.logoContainer {
+  font-weight: 700;
+  margin-inline-end: auto;
+}
+
 .cta {
   background-color: var(--primary);
   border-radius: 4px;

@@ -1,9 +1,23 @@
 import styles from "./SignIn.module.css";
 
-import Head from "next/head";
 import { Logo } from "@/components/Logo";
+import Head from "next/head";
+import { ChangeEvent, FC, useState } from "react";
 
-export const SignIn = () => {
+export const SignIn: FC = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleChange =
+    (formKey: "email" | "password") => (evt: ChangeEvent<HTMLInputElement>) => {
+      setFormData({
+        ...formData,
+        [formKey]: evt.target.value,
+      });
+    };
+
   return (
     <>
       <Head>
@@ -12,19 +26,40 @@ export const SignIn = () => {
       </Head>
 
       <main className={styles.main}>
-        <Logo className={styles.logoContainer} />
-        <h3 className={styles.heading}>Sign in</h3>
-        <p>to continue to Calendoo</p>
-
         <form className={styles.form}>
+          <Logo className={styles.logoContainer} />
+          <h3 className={styles.heading}>Sign in</h3>
+          <p>to continue to Calendoo</p>
           <label>
-            <span>Email</span>
-            <input type="email" />
+            <span
+              className={`${styles.labelText}${
+                formData.email ? ` ${styles.inputDirty}` : ""
+              }`}
+            >
+              Email
+            </span>
+            <input
+              type="email"
+              className={styles.input}
+              value={formData.email}
+              onChange={handleChange("email")}
+            />
           </label>
 
           <label>
-            <span>Password</span>
-            <input type="password" />
+            <span
+              className={`${styles.labelText}${
+                formData.password ? ` ${styles.inputDirty}` : ""
+              }`}
+            >
+              Password
+            </span>
+            <input
+              type="password"
+              className={styles.input}
+              value={formData.password}
+              onChange={handleChange("password")}
+            />
           </label>
 
           <button type="submit">Continue</button>

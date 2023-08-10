@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <Logo />
+        <Logo className={styles.logoContainer} />
 
         <Link href="/sign-in">Sign in</Link>
         <Link href="#" className={styles.cta}>

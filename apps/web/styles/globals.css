@@ -72,3 +72,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.page-wrapper {
+  height: 100%;
+}
