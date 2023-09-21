@@ -933,7 +933,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.4.5, @types/node@npm:>=12.12.47, @types/node@npm:>=13.7.0":
+"@types/node@npm:20.6.3":
+  version: 20.6.3
+  resolution: "@types/node@npm:20.6.3"
+  checksum: 444a6f1f41cfa8d3e20ce0108e6e43960fb2ae0e481f233bb1c14d6252aa63a92e021de561cd317d9fdb411688f871065f40175a1f18763282dee2613a08f8a3
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:>=12.12.47, @types/node@npm:>=13.7.0":
   version: 20.4.5
   resolution: "@types/node@npm:20.4.5"
   checksum: 36a0304a8dc346a1b2d2edac4c4633eecf70875793d61a5274d0df052d7a7af7a8e34f29884eac4fbd094c4f0201477dcb39c0ecd3307ca141688806538d1138
@@ -4045,7 +4052,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "web@workspace:apps/web"
   dependencies:
-    "@types/node": 20.4.5
+    "@types/node": 20.6.3
     "@types/react": 18.2.4
     "@types/react-dom": 18.2.3
     eslint: 8.39.0
